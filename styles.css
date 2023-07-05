@@ -58,3 +58,17 @@ nav li:hover {
     text-align: left;
   }
 }
+
+.rotd-all {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding-top: 1rem;
+}
+
+.rotd-title {
+  position: relative;
+  bottom: 2.5rem;
+  padding-left: 1rem;
+  background-color:  #F7891c;
+}
