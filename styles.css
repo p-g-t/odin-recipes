@@ -14,21 +14,47 @@ nav {
 nav ul {
   padding: 0;
   list-style: none;
-  
+}
+
+.company-name {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #F7891c;
 }
 
 nav li {
-  float: left;
+  float: right;
   width: 150px;
   padding: 10px;
   display: block;
   text-decoration: none;
   text-align: center;
- }
+  font-size: 1rem;
+}
 
- nav li:hover {
+nav li:hover {
   background: #F7891c;
   color: black;
   text-transform: uppercase;
   transition: 0.5s;
- }
+}
+
+@media screen and (max-width:768px)
+ {
+  .company-name {
+    position: fixed;
+    padding: 0.5rem 0.5rem;
+  }
+  
+  ul {
+    margin-top: 2.5rem;
+  }
+
+  nav li {
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+}
