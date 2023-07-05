@@ -2,43 +2,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins";
 }
 
-header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 30px;
-  font-family: 'Poppins', sans-serif;
-  margin: 0 auto;
+nav {
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(245, 245, 245);
 }
 
 nav ul {
-  display: flex;
-  list-style-type: none;
-  padding-left: 50px;
+  padding: 0;
+  list-style: none;
+  
 }
 
 nav li {
-  padding: 5px;
-  font-size: smaller;
-  font-weight
-}
+  float: left;
+  width: 150px;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+ }
 
-header, footer {
-  background-color: rgb(248, 248, 248);
-}
-
-.company img {
-  border-radius: 50%;
-}
-
-.company {
-  display: flex;
-
-}
-
-.company p {
-  font-size: larger;
-  font-weight: 600;
-}
+ nav li:hover {
+  background: #F7891c;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.5s;
+ }
