@@ -50,22 +50,6 @@ nav li:hover {
   max-width: 200px;
 }
 
-@media screen and (max-width:768px)
- {
-  nav {
-    display: block;
-  }
-  .company-name {
-    padding: 0.5rem 0.5rem;
-  }
-
-  nav li {
-    float: left;
-    width: 100%;
-    text-align: left;
-  }
-}
-
 h1 {
   padding: 2rem 1rem;
 }
@@ -99,4 +83,28 @@ footer ul {
 
 footer li:first-child {
   font-weight: bold;
+}
+
+@media screen and (max-width:768px)
+ {
+  nav {
+    display: block;
+  }
+  .company-name {
+    padding: 0.5rem 0.5rem;
+  }
+
+  nav li {
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+
+  .rotd-all img {
+    max-width: 150px;
+  }
+
+  .rotd-all {
+    gap: 0.5rem;
+  }
 }
