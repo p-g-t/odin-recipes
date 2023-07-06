@@ -9,19 +9,24 @@ nav {
   width: 100%;
   overflow: auto;
   background-color: rgb(245, 245, 245);
+  display: flex;
 }
 
 nav ul {
+  margin-left: auto;
   padding: 0;
   list-style: none;
 }
 
 .company-name {
-  position: absolute;
   padding: 0.5rem 1rem;
   font-size: 1.3rem;
   font-weight: bold;
   color: #F7891c;
+}
+
+nav a:first-child {
+  text-decoration: none;
 }
 
 nav li {
@@ -43,17 +48,15 @@ nav li:hover {
 
 @media screen and (max-width:768px)
  {
-  .company-name {
-    position: fixed;
-    padding: 0.5rem 0.5rem;
+  nav {
+    display: block;
   }
-  
-  ul {
-    margin-top: 2.5rem;
+  .company-name {
+    padding: 0.5rem 0.5rem;
   }
 
   nav li {
-    float: none;
+    float: left;
     width: 100%;
     text-align: left;
   }
@@ -81,6 +84,7 @@ h1 {
 footer {
   display: flex;
   background-color: rgb(245, 245, 245);
+  padding-bottom: 2rem;
 }
 
 footer ul {
