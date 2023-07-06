@@ -46,6 +46,10 @@ nav li:hover {
   transition: 0.5s;
 }
 
+.rotd-all img {
+  max-width: 200px;
+}
+
 @media screen and (max-width:768px)
  {
   nav {
