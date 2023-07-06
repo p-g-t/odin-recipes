@@ -35,9 +35,9 @@ nav li {
 }
 
 nav li:hover {
-  background: #F7891c;
-  color: black;
-  text-transform: uppercase;
+  color: white;
+  font-weight: bolder;
+  background-color: #F7891c;
   transition: 0.5s;
 }
 
@@ -59,11 +59,16 @@ nav li:hover {
   }
 }
 
+h1 {
+  padding: 2rem 1rem;
+}
+
 .rotd-all {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center;
-  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0.2rem 2rem 0.2rem;
 }
 
 .rotd-title {
@@ -71,4 +76,19 @@ nav li:hover {
   bottom: 2.5rem;
   padding-left: 1rem;
   background-color:  #F7891c;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(245, 245, 245);
+}
+
+footer ul {
+  list-style: none;
+  margin: 1rem 2rem;
+  line-height: 2;
+}
+
+footer li:first-child {
+  font-weight: bold;
 }
