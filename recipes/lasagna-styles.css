@@ -32,3 +32,69 @@ h1, h2 {
   min-width: 100%;
   object-fit: cover;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "body sidebar"
+    "ingredients sidebar"
+    "steps sidebar";
+  grid-template-columns: 3fr 0.5fr;
+  gap: 1rem;
+}
+
+.article-body {
+  grid-area: body;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.article-ingredients {
+  grid-area: ingredients;
+}
+
+.article-steps {
+  grid-area: steps;
+}
+
+aside {
+  grid-area: sidebar;
+  background-color: rgb(245, 245, 245);
+}
+
+aside,
+.article-steps {
+  margin-bottom: 5rem;
+}
+
+.article-body,
+.article-ingredients,
+.article-steps {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.list-ingredients {
+  border: 2px solid rgb(245, 245, 245);
+  padding: 1rem;
+  line-height: 2rem;
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+.list-ingredients ul {
+  list-style-type: none;
+}
+
+
+.list-ingredients li:before {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: 20px;
+  background-image: url("../images/bullet-square.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 5px;
+}
