@@ -78,7 +78,7 @@ aside,
   border: 2px solid rgb(245, 245, 245);
   padding: 1rem;
   line-height: 2rem;
-  max-width: 40%;
+  max-width: 60%;
   margin: 0 auto;
 }
 
@@ -97,4 +97,26 @@ aside,
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 5px;
+}
+
+@media screen and (max-width:768px)
+{
+  .list-ingredients {
+    max-width: 85%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "body ."
+      "ingredients ."
+      "steps ."
+      "sidebar .";
+    grid-template-columns: 3fr 0fr;
+    gap: 1rem;
+  }
+
+  aside {
+    min-height: 5rem;
+  }
 }
