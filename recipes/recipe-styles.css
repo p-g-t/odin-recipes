@@ -60,21 +60,26 @@ h1, h2 {
 aside {
   grid-area: sidebar;
   background-color: rgb(245, 245, 245);
-  padding: 1rem;
   border: 2px solid rgb(208, 208, 208);
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
-aside li, aside a {
-  color: #F7891c;
-  text-decoration: none;
-  list-style: none;
+
+aside li {
   line-height: 2.5rem;
+  list-style: none;
+  padding: 1rem;
+  flex: 1;
+  color: #F7891c;
 }
 
-aside a:hover, aside li:hover {
-  text-transform: uppercase;
+aside li:hover {
+  color: black;
+  background-color: #F7891c;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 aside,
